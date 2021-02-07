@@ -12,7 +12,6 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <script src="script.js"></script>
-    <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
     <script src="https://kit.fontawesome.com/367a320177.js"></script>
 </head>
 
@@ -27,15 +26,21 @@
                 </div>
                 <div class="col">
                 </div>
-                <div class="col" style="text-align: right;">
+                <div id="header-menus" style="text-align: right;">
                     <a href="#" class="header-links">Log In</a>
                     <a href="#" class="header-links">Sign Up</a>
                     <a href="#" class="header-links">Set Up My Business</a>
-                    <i class="fas fa-bars" id="menubar"></i>
+                    <i class="fas fa-bars" id="hamburger" onclick="toggleMenu()"></i>
+                    <!-- <P id="hamburger" onclick="toggleMenu()">test</P> -->
                 </div>
             </div>
         </header>
 
+        <!-- <div class="mobile-header">
+            <a href="#" class="header-links-mobile">Log In</a>
+            <a href="#" class="header-links-mobile">Sign Up</a>
+            <a href="#" class="header-links-mobile">Set Up My Business</a>
+        </div> -->
 
         <form>
 
@@ -73,7 +78,7 @@
             </div>
 
         </form>
-        
+
         <div class="empty-space"></div>
 
     </div>
@@ -89,8 +94,15 @@
                                 promotions, exclusive deals and
                                 content.</p>
                             <div class="subs-bar">
-                                <input type="text"/>
+                                <input type="text" />
                                 <button>JOIN</button>
+                            </div>
+                            <div class="payment-sec">
+                                <button class="payment-icons"></button>
+                                <button class="payment-icons"></button>
+                                <button class="payment-icons"></button>
+                                <button class="payment-icons"></button>
+                                <button class="payment-icons"></button>
                             </div>
                         </div>
                         <div class="footer-items">

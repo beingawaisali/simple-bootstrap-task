@@ -10,5 +10,3 @@
 //     alert("no bug");
 //     return;
 // };
-
-// validateForm();
